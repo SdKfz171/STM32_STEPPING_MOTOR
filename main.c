@@ -288,55 +288,14 @@ int main(){
 		for(int i = 0; i < 200; i++){
 			GPIO_SetBits(GPIOC, GPIO_Pin_12);
 			GPIO_SetBits(GPIOD, GPIO_Pin_2);
-			Delay_us(4000);
+			Delay_us(1000);
 			GPIO_ResetBits(GPIOC, GPIO_Pin_12);
 			GPIO_ResetBits(GPIOD, GPIO_Pin_2);
-			Delay_us(4000);
+			Delay_us(1000);
 		}
 		
-//		if(GPIO_ReadInputDataBit(GPIOC, GPIO_Pin_0)){
-//			USART_SendStr("D0");
-////			for(int i = 0; i < 200; i++){
-////				GPIO_SetBits(GPIOC, GPIO_Pin_12);
-////				GPIO_SetBits(GPIOD, GPIO_Pin_2);
-////				Delay_us(1000);
-////				GPIO_ResetBits(GPIOC, GPIO_Pin_12);
-////				GPIO_ResetBits(GPIOD, GPIO_Pin_2);
-////				Delay_us(1000);
-////			}
-//			
-//		}
-//		if(GPIO_ReadInputDataBit(GPIOC, GPIO_Pin_1)){
-//			GPIO_ResetBits(GPIOC, GPIO_Pin_12);
-//			USART_SendStr("D1");
-//		}
-//		if(GPIO_ReadInputDataBit(GPIOC, GPIO_Pin_2)){
-//			USART_SendStr("D2");
-//		}
-//		if(GPIO_ReadInputDataBit(GPIOC, GPIO_Pin_3)){
-//			USART_SendStr("D3");
-//		}
-//		
-//		if(GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_7)){
-//			USART_SendStr("On\r\n");
-//		}
-//		
-//		if(!GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_7)){
-//			USART_SendStr("Off\r\n");
-//		}
+
 	}
-	
-//	
-//	while(1){
-//		for(int i = 0; i < 200; i++){
-//			GPIO_SetBits(GPIOC, GPIO_Pin_12);
-//			GPIO_SetBits(GPIOD, GPIO_Pin_2);
-//			Delay_us(1000);
-//			GPIO_ResetBits(GPIOC, GPIO_Pin_12);
-//			GPIO_ResetBits(GPIOD, GPIO_Pin_2);
-//			Delay_us(1000);
-//		}
-//	}
 	
 	return 0;
 }
